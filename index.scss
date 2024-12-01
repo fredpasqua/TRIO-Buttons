@@ -1,16 +1,16 @@
 //variable sizes
-$button-width: 120px;
+$button-width: 150px;
 $button-height: 39px;
 $button-border-width: 1px;
 $outer-button-border-radius: 15px;
 //variable colors and styles
-$button-text-color: green;
-$hover-color:	#74a06c;
-$button-background-color:#82be77;
+$button-text-color: rgb(32, 62, 73);
+$hover-color:	#050c5efd;
+$button-background-color:#91bcba;
 $button-border-color:  	#a1d197;
 $button-font: Arial;
-$button-active-color: rgb(51, 113, 50);
-$text-active-color: white;
+$button-active-color: rgb(6, 52, 83);
+$text-active-color: #a1d197;
 
 .objectSelectorList{
   display: flex;
@@ -35,10 +35,16 @@ $text-active-color: white;
   border: $button-border-width solid $button-border-color;
   color: $button-text-color;
   padding: 10px;
+ box-shadow: 3px 2px 9px grey;
+
 }
 .selButton:hover {
-  transition: 300ms;
+  transition: 400ms;
   background-color: $hover-color;
+ box-shadow: none;
+ color: $text-active-color;
+ font-weight: bold;
+
 }
 .selButton:active {
   background-color: $button-active-color;
