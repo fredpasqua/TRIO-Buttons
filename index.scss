@@ -1,0 +1,58 @@
+//variable sizes
+$button-width: 120px;
+$button-height: 39px;
+$button-border-width: 1px;
+$outer-button-border-radius: 15px;
+//variable colors and styles
+$button-text-color: green;
+$hover-color:	#74a06c;
+$button-background-color:#82be77;
+$button-border-color:  	#a1d197;
+$button-font: Arial;
+$button-active-color: rgb(51, 113, 50);
+$text-active-color: white;
+
+.objectSelectorList{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  list-style-type: none;
+}
+.text {
+  width: $button-width;
+  color: $button-text-color;
+  font-family:$button-font;
+ text-align: center;
+}
+
+.selButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $button-width;
+  height: $button-height;
+  background-color: $button-background-color;
+  border: $button-border-width solid $button-border-color;
+  color: $button-text-color;
+  padding: 10px;
+}
+.selButton:hover {
+  transition: 300ms;
+  background-color: $hover-color;
+}
+.selButton:active {
+  background-color: $button-active-color;
+  text-decoration: none;
+  color: $text-active-color;
+}
+.selectorButton:focus {
+  background-color: $hover-color;
+  border: 2px cyan solid;
+}
+
+.selectorButtonA{
+border-top-left-radius: $outer-button-border-radius;
+}
+
+.selectorButtonC{
+  border-top-right-radius: $outer-button-border-radius;}

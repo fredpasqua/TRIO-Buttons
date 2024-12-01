@@ -1,0 +1,51 @@
+.objectSelectorList {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  list-style-type: none;
+}
+
+.text {
+  width: 120px;
+  color: green;
+  font-family: Arial;
+  text-align: center;
+}
+
+.selButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 39px;
+  background-color: #82be77;
+  border: 1px solid #a1d197;
+  color: green;
+  padding: 10px;
+}
+
+.selButton:hover {
+  transition: 300ms;
+  background-color: #74a06c;
+}
+
+.selButton:active {
+  background-color: rgb(51, 113, 50);
+  text-decoration: none;
+  color: white;
+}
+
+.selectorButton:focus {
+  background-color: #74a06c;
+  border: 2px cyan solid;
+}
+
+.selectorButtonA {
+  border-top-left-radius: 15px;
+}
+
+.selectorButtonC {
+  border-top-right-radius: 15px;
+}
+
+/*# sourceMappingURL=index.css.map */
